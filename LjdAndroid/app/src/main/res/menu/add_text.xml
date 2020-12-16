@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/deleteTitle"
+        android:title="删除"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/moveTitle"
+        android:title="移入文件夹"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/ClockTitle"
+        android:title="设置闹钟"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/noClockTitle"
+        android:title="取消闹钟"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/saveTitle"
+        android:title="保存"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/backTitle"
+        android:title="返回"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+
+
+
+</menu>
