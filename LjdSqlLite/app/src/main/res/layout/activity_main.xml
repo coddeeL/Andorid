@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="51dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:text="姓名:"
+        android:textSize="9pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="380dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="4dp"
+        android:textSize="9pt"
+        app:layout_constraintLeft_toRightOf="@id/text1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="53dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:text="年龄:"
+        android:textSize="9pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="381dp"
+        android:layout_height="58dp"
+        android:textSize="9pt"
+        app:layout_constraintLeft_toRightOf="@id/text2"
+        app:layout_constraintTop_toBottomOf="@id/edit1" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="53dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:text="身高:"
+        android:textSize="9pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2" />
+
+    <EditText
+        android:id="@+id/edit3"
+        android:layout_width="381dp"
+        android:layout_height="58dp"
+        android:textSize="9pt"
+        app:layout_constraintLeft_toRightOf="@id/text2"
+        app:layout_constraintTop_toBottomOf="@id/edit2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="9pt"
+        android:text="全部显示"
+        app:layout_constraintLeft_toRightOf="@id/button1"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+
+        />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="9pt"
+        android:text="清除显示"
+        app:layout_constraintLeft_toRightOf="@id/button2"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+
+        />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="9pt"
+        android:text="全部删除"
+        app:layout_constraintLeft_toRightOf="@id/button3"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+
+        />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="9pt"
+        android:text="添加数据"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+
+        />
+
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="36dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:text="ID:"
+        android:textSize="9pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button1" />
+
+    <EditText
+        android:id="@+id/edit4"
+        android:layout_width="113dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:textSize="9pt"
+        app:layout_constraintLeft_toRightOf="@id/text4"
+        app:layout_constraintTop_toBottomOf="@id/button1" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ID删除"
+        android:textSize="9pt"
+        app:layout_constraintLeft_toRightOf="@id/edit4"
+        app:layout_constraintTop_toBottomOf="@id/button1"
+        />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ID查询"
+        android:textSize="9pt"
+        app:layout_constraintLeft_toRightOf="@id/button5"
+
+        app:layout_constraintTop_toBottomOf="@id/button1" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ID更新"
+        android:textSize="9pt"
+        app:layout_constraintLeft_toRightOf="@id/button6"
+        app:layout_constraintTop_toBottomOf="@id/button1" />
+
+    <TextView
+        android:id="@+id/textbox"
+        android:layout_width="414dp"
+        android:layout_height="472dp"
+        android:textSize="9pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit4"
+        android:scrollbars="vertical"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
